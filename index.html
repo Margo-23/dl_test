@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WORKOUT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Risque&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/itc-custom-select.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="wrapper">
+      <nav class="header__nav">
+        <div class="header__logo">
+          <a href="/"><img class="header__logo-img" src="./images/logo.png" alt="logo"></a>
+        </div>
+
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="/">Main</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="/">About</a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="/">Products</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="/">Contacts</a>
+          </li>
+        </ul>
+        <div class="header__menu" id="menu">
+          <ul class="header__menulist">
+            <li class="header__menuitem">
+              <a class="header__menulink" href="/">Main</a>
+            </li>
+            <li class="header__menuitem">
+              <a class="header__menulink" href="/">About</a>
+            </li>
+
+            <li class="header__menuitem">
+              <a class="header__menulink" href="/">Products</a>
+            </li>
+            <li class="header__menuitem">
+              <a class="header__menulink" href="/">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__button" id="burger">
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <main class="main">
+    <div class="wrapper">
+      <div class="page">
+        <div class="page__wrapper">
+          <!-- screen1 -->
+          <div class="page__screen screen">
+            <div class="screen__maincontent">
+              <div class="main-title">Main Site Title</div>
+              <div class="screen__text">Lorem ipsum descripsum</div>
+              <a class="screen__button" href="/">Call to action</a>
+
+            </div>
+            <div class="screen__body">
+              <div class="ded">
+                <img class="ded__ded" src="./images/ded.png">
+                <div class="cloud" id="cloud">
+                  <img class="ded__cloud" src="./images/Cloud.png">
+                  <div class="cloud__text">How how how !!!
+                    Like it? <br />
+                    Scroll down for more </div>
+                </div>
+              </div>
+              <div class="snow-item">
+                <img id="snow-item__img" src="./images/snow_item.png">
+              </div>
+              <div class="screen__image">
+                <img src="./images/screen1bg.png">
+                <img class="screen__image screen__image--snow screen__image--first" src="./images/Snow.png">
+              </div>
+
+            </div>
+          </div>
+          <!-- screen2 -->
+          <div class="page__screen screen">
+            <div class="screen__content">
+              <div class="left">
+                <div class="title">At least somewhere you can feel new year atmosphere</div>
+                <div class="screen__text">Choose your present:</div>
+                <div class="screen__tabs">
+                  <div class="screen__tabs-item" data-show="sock">
+                    <img src="./images/tabs1.png">
+                  </div>
+                  <div class="screen__tabs-item" data-show="hat">
+                    <img src="./images/tabs2.png">
+                  </div>
+                  <div class="screen__tabs-item" data-show="bag">
+                    <img src="./images/tabs3.png">
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="screen__info" id="sock">
+                  <div class="screen__info-text">Reuglar sock have no present inside Lorem Ipsum is simply dumm y text
+                    of the printing and types etting industry. Lorem
+                  </div>
+                  <div class="screen__info-img"><img src="./images/tabs1.png"></div>
+                </div>
+                <div class="screen__info" id="hat">
+                  <div class="screen__info-text">Reuglar sock have no present inside Lorem Ipsum is simply dumm y text
+                    of the printing and types etting industry. Lorem
+                  </div>
+                  <div class="screen__info-img"><img src="./images/tabs2.png"></div>
+                </div>
+                <div class="screen__info" id="bag">
+                  <div class="screen__info-text">Reuglar sock have no present inside Lorem Ipsum is simply dumm y text
+                    of the printing and types etting industry. Lorem
+                  </div>
+                  <div class="screen__info-img"><img src="./images/tabs3.png"></div>
+                </div>
+              </div>
+
+            </div>
+            <div class="screen__body">
+              <div class="screen__image">
+                <img src="./images/screen2bg.png">
+                <img class="screen__image screen__image--snow" src="./images/Snow.png">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- screen3 -->
+          <div class="page__screen screen">
+            <div class="screen__content">
+              <div class="screen__form">
+                <div class="title">Write us <br /> for real presents</div>
+                <form>
+                  <input class="screen__input" name="name" placeholder="Name" type="text" id="name">
+                  <input class="screen__input" name="phone" placeholder="Phone" type="tel" id="phone">
+                  <div id="gender">
+                    <div class="itc-select" id="select-1">
+                      <button type="button" class="itc-select__toggle" name="gender" value="" data-select="toggle"
+                        data-index="-1">Gender</button>
+                      <div class="itc-select__dropdown">
+                        <ul class="itc-select__options">
+                          <li class="itc-select__option" data-select="option" data-value="boy" data-index="0">
+                            Boy</li>
+                          <li class="itc-select__option" data-select="option" data-value="girl" data-index="1">Girl</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <input class="screen__input" name="email" placeholder="Email" type="email" id="email">
+                  <textarea class="screen__textarea" placeholder="Your witsh" id="textarea"></textarea>
+                  <label class="screen__label" id="checkbox">
+                    <input name="chek" type="checkbox">
+                    <span class="chekSpan"><img src="./images/chekmark.png"></span>
+                    Whant Coca-cola with present ?
+                  </label>
+                  <!-- <button type="submit"></button> -->
+                </form>
+              </div>
+
+            </div>
+            <div class="screen__body">
+              <div class="screen__image">
+                <img src="./images/screen3bg.png">
+                <img class="screen__image screen__image--snow" src="./images/Snow.png">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/itc-custom-select.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
